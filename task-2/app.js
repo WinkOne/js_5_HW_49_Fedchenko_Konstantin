@@ -1,6 +1,5 @@
 var figlet = require('figlet');
-var prompt = "Hello, Dmitrii";
-figlet.text(prompt, function (error, data) {
+figlet.text(process.argv[2], function (error, data) {
     if(error){
     } else  {
         console.log(data);
